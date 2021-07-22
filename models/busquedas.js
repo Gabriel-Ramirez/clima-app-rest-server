@@ -53,13 +53,15 @@ class Busquedas {
             });
 
             const res = await instance.get();
-            const { weather, main } = res.data;
+            const { weather, main, name } = res.data;
 
             return {
                 desc: weather[0].description,
                 min: main.temp_min,
                 max: main.temp_max,
-                temp: main.temp
+                temp: main.temp,
+                humedad: main.humidity, 
+                nombre: name
             }
 
         } catch (error) {
