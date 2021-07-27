@@ -1,7 +1,7 @@
 # clima-app-rest-server
 api para obtener datos del clima por cuidad. 
 
-#Instalación 
+# Instalación 
 
 npm install 
 
